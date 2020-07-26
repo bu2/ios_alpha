@@ -8,22 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		F376542C24CDD0AC00ECF6FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F376542B24CDD0AC00ECF6FB /* AppDelegate.swift */; };
-		F376542E24CDD0AC00ECF6FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F376542D24CDD0AC00ECF6FB /* SceneDelegate.swift */; };
 		F376543024CDD0AC00ECF6FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F376542F24CDD0AC00ECF6FB /* ViewController.swift */; };
 		F376543324CDD0AC00ECF6FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F376543124CDD0AC00ECF6FB /* Main.storyboard */; };
 		F376543524CDD0AD00ECF6FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F376543424CDD0AD00ECF6FB /* Assets.xcassets */; };
 		F376543824CDD0AD00ECF6FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F376543624CDD0AD00ECF6FB /* LaunchScreen.storyboard */; };
+		F376544F24CDDDE200ECF6FB /* Turbolinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F376544524CDD24A00ECF6FB /* Turbolinks.framework */; };
+		F376545024CDDDE200ECF6FB /* Turbolinks.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F376544524CDD24A00ECF6FB /* Turbolinks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F376544424CDD24A00ECF6FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F376543F24CDD24A00ECF6FB /* Turbolinks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1FC167EF1B55A14900AA6F43;
+			remoteInfo = Turbolinks;
+		};
+		F376544624CDD24A00ECF6FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F376543F24CDD24A00ECF6FB /* Turbolinks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 92DF45071C80F7970064E606;
+			remoteInfo = Tests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F376545124CDDDE200ECF6FB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F376545024CDDDE200ECF6FB /* Turbolinks.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F376542824CDD0AC00ECF6FB /* ios_alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_alpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F376542B24CDD0AC00ECF6FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F376542D24CDD0AC00ECF6FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F376542F24CDD0AC00ECF6FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F376543224CDD0AC00ECF6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F376543424CDD0AD00ECF6FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F376543724CDD0AD00ECF6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F376543924CDD0AD00ECF6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F376543F24CDD24A00ECF6FB /* Turbolinks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Turbolinks.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F376544F24CDDDE200ECF6FB /* Turbolinks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +75,7 @@
 			children = (
 				F376542A24CDD0AC00ECF6FB /* ios_alpha */,
 				F376542924CDD0AC00ECF6FB /* Products */,
+				F376543F24CDD24A00ECF6FB /* Turbolinks.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				F376542B24CDD0AC00ECF6FB /* AppDelegate.swift */,
-				F376542D24CDD0AC00ECF6FB /* SceneDelegate.swift */,
 				F376542F24CDD0AC00ECF6FB /* ViewController.swift */,
 				F376543124CDD0AC00ECF6FB /* Main.storyboard */,
 				F376543424CDD0AD00ECF6FB /* Assets.xcassets */,
@@ -65,6 +98,15 @@
 				F376543924CDD0AD00ECF6FB /* Info.plist */,
 			);
 			path = ios_alpha;
+			sourceTree = "<group>";
+		};
+		F376544024CDD24A00ECF6FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F376544524CDD24A00ECF6FB /* Turbolinks.framework */,
+				F376544724CDD24A00ECF6FB /* Tests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +119,7 @@
 				F376542424CDD0AC00ECF6FB /* Sources */,
 				F376542524CDD0AC00ECF6FB /* Frameworks */,
 				F376542624CDD0AC00ECF6FB /* Resources */,
+				F376545124CDDDE200ECF6FB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,12 +156,35 @@
 			mainGroup = F376541F24CDD0AC00ECF6FB;
 			productRefGroup = F376542924CDD0AC00ECF6FB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F376544024CDD24A00ECF6FB /* Products */;
+					ProjectRef = F376543F24CDD24A00ECF6FB /* Turbolinks.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F376542724CDD0AC00ECF6FB /* ios_alpha */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F376544524CDD24A00ECF6FB /* Turbolinks.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Turbolinks.framework;
+			remoteRef = F376544424CDD24A00ECF6FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F376544724CDD24A00ECF6FB /* Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Tests.xctest;
+			remoteRef = F376544624CDD24A00ECF6FB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F376542624CDD0AC00ECF6FB /* Resources */ = {
@@ -140,7 +206,6 @@
 			files = (
 				F376543024CDD0AC00ECF6FB /* ViewController.swift in Sources */,
 				F376542C24CDD0AC00ECF6FB /* AppDelegate.swift in Sources */,
-				F376542E24CDD0AC00ECF6FB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +352,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FZA9JCVQ6F;
 				INFOPLIST_FILE = ios_alpha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "bu2.cf.ios-alpha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +371,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FZA9JCVQ6F;
 				INFOPLIST_FILE = ios_alpha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "bu2.cf.ios-alpha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
