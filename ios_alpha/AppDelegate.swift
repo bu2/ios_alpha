@@ -22,7 +22,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func startApplication() {
         session.delegate = self
-        visit(URL: URL(string: "http://bu2book.local:3000/programs")!)
+        
+        registerDefaultsFromSettingsBundle()
+        
+        let ROOT_URL = UserDefaults.standard.string(forKey: "root_url_preference")!
+        NSLog("ROOT_URL = \(ROOT_URL)")
+        
+        visit(URL: URL(string: ROOT_URL)!)
+    }
+    
+    func registerDefaultsFromSettingsBundle()
+    {
+        let settingsUrl = Bundle.main.url(forResource: "Settings", withExtension: "bundle")!.appendingPathComponent("Root.plist")
+        let settingsPlist = NSDictionary(contentsOf:settingsUrl)!
+        let preferences = settingsPlist["PreferenceSpecifiers"] as! [NSDictionary]
+
+        var defaultsToRegister = Dictionary<String, Any>()
+
+        for preference in preferences {
+            guard let key = preference["Key"] as? String else {
+                NSLog("Key not found")
+                continue
+            }
+            defaultsToRegister[key] = preference["DefaultValue"]
+        }
+        UserDefaults.standard.register(defaults: defaultsToRegister)
     }
     
     func visit(URL: URL) {

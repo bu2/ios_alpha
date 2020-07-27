@@ -14,6 +14,7 @@
 		F376543824CDD0AD00ECF6FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F376543624CDD0AD00ECF6FB /* LaunchScreen.storyboard */; };
 		F376544F24CDDDE200ECF6FB /* Turbolinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F376544524CDD24A00ECF6FB /* Turbolinks.framework */; };
 		F376545024CDDDE200ECF6FB /* Turbolinks.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F376544524CDD24A00ECF6FB /* Turbolinks.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F38387D424CE552900D64266 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F38387D324CE552900D64266 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		F376543724CDD0AD00ECF6FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F376543924CDD0AD00ECF6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F376543F24CDD24A00ECF6FB /* Turbolinks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Turbolinks.xcodeproj; sourceTree = "<group>"; };
+		F38387D324CE552900D64266 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				F376542B24CDD0AC00ECF6FB /* AppDelegate.swift */,
+				F38387D324CE552900D64266 /* Settings.bundle */,
 				F376542F24CDD0AC00ECF6FB /* ViewController.swift */,
 				F376543124CDD0AC00ECF6FB /* Main.storyboard */,
 				F376543424CDD0AD00ECF6FB /* Assets.xcassets */,
@@ -191,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F38387D424CE552900D64266 /* Settings.bundle in Resources */,
 				F376543824CDD0AD00ECF6FB /* LaunchScreen.storyboard in Resources */,
 				F376543524CDD0AD00ECF6FB /* Assets.xcassets in Resources */,
 				F376543324CDD0AC00ECF6FB /* Main.storyboard in Resources */,
