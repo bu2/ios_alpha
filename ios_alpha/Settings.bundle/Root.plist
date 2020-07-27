@@ -14,7 +14,7 @@
 			<key>Key</key>
 			<string>root_url_preference</string>
 			<key>DefaultValue</key>
-			<string>http://localhost:3000/programs</string>
+			<string>http://localhost:3000/</string>
 			<key>IsSecure</key>
 			<false/>
 			<key>KeyboardType</key>
