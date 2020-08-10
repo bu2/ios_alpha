@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var session = Session()
     
     func applicationDidFinishLaunching(_ application: UIApplication) {
+        navigationController.setNavigationBarHidden(true, animated: false)
         window?.rootViewController = navigationController
         startApplication()
     }
@@ -58,7 +59,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: SessionDelegate {
     func session(_ session: Session, didProposeVisitToURL URL: URL, withAction action: Action) {
-        visit(URL: URL)
+        if URL.relativePath == "/back" {
+            navigationController.popViewController(animated: true)
+        } else {
+            visit(URL: URL)
+        }
     }
     
     func session(_ session: Session, didFailRequestForVisitable visitable: Visitable, withError error: NSError) {
