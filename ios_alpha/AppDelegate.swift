@@ -59,7 +59,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: SessionDelegate {
     func session(_ session: Session, didProposeVisitToURL URL: URL, withAction action: Action) {
-        if URL.relativePath == "/back" {
+        if URL.relativePath == "/" {
+            navigationController.popToRootViewController(animated: true)
+        } else if URL.relativePath == "/back" {
             navigationController.popViewController(animated: true)
         } else {
             visit(URL: URL)
